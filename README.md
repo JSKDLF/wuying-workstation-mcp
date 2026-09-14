@@ -49,11 +49,11 @@
 
 - `WUYING_API_KEY`
 
-可选环境变量见 [.env.example](/d:/GZT/mcp/WYMCP/.env.example)。
+可选环境变量见 [.env.example](.env.example)。
 
 ## MCP 客户端配置示例
 
-推荐这样配置：
+推荐这样配置（把 `args` 里的路径替换成你本机 clone 后 `dist/index.js` 的实际路径）：
 
 ```json
 {
@@ -61,7 +61,7 @@
     "wuying-workstation": {
       "command": "node",
       "args": [
-        "D:\\GZT\\mcp\\WYMCP\\dist\\index.js"
+        "/path/to/wuying-workstation-mcp/dist/index.js"
       ],
       "env": {
         "WUYING_API_KEY": "你的ApiKey",
