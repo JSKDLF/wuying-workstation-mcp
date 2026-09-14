@@ -144,7 +144,6 @@ async function invokeWuyingAction(action, body = {}, queryExtra = {}) {
 
   return {
     action,
-    url: url.toString(),
     rawText,
     data
   };
@@ -504,7 +503,7 @@ function getToolDefinitions() {
         properties: {
           desktopId: { type: "string", description: "必填。目标桌面 ID，例如 ws-xxxx。" },
           waitForRunning: { type: "boolean", description: "可选。默认 true，等待直到状态变为 Running。" },
-          timeoutSeconds: { type: "integer", minimum: 10, description: "可选。等待超时时间，默认 600 秒。" },
+          timeoutSeconds: { type: "integer", "minimum": 10, description: "可选。等待超时时间，默认 600 秒。" },
           pollIntervalSeconds: { type: "integer", minimum: 1, description: "可选。轮询间隔，默认 5 秒。" }
         },
         required: ["desktopId"],
@@ -519,7 +518,7 @@ function getToolDefinitions() {
         properties: {
           desktopId: { type: "string", description: "必填。目标桌面 ID，例如 ws-xxxx。" },
           waitForStopped: { type: "boolean", description: "可选。默认 true，等待直到状态变为 Stopped。" },
-          timeoutSeconds: { type: "integer", minimum: 10, description: "可选。等待超时时间，默认 600 秒。" },
+          timeoutSeconds: { type: "integer", "minimum": 10, description: "可选。等待超时时间，默认 600 秒。" },
           pollIntervalSeconds: { type: "integer", minimum: 1, description: "可选。轮询间隔，默认 5 秒。" }
         },
         required: ["desktopId"],

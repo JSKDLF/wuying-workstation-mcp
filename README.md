@@ -138,4 +138,3 @@ $lines | node .\dist\index.js
 
 - `start_workstation` 和 `stop_workstation` 在调用前会先查当前状态，避免无意义重复操作。
 - 根据官方说明，`StartDesktop` 主要对 `Stopped` 有意义，`StopDesktop` 主要对 `Running` 有意义。
-- 当前代理环境里的 `node.exe` 进程启动存在宿主异常，所以我已经把 Node 版源码和构建产物落好，但没法在这里完成真实运行联调。
